@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- customised CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- cdn for fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body style="background-image: linear-gradient(90deg , skyblue , rgb(145, 71, 241));">
+
+    <!-- Navigation bar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="media/nav.png" width="200px" height="50px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopnow.html">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            User
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="Register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container mt-5 pb-5">
+        <h2>Login</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form name="Login" onsubmit="return loginvalidation()" method="post">
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" name="Email" class="form-control" id="email1">
+                        <span id="error-email1" style="color: red; font-size: 12px;"></span>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Password </label>
+                        <input type="password" name="Password" class="form-control" id="password1">
+                        <span id="error-password1" style="color: red; font-size: 12px;"></span>
+                    </div>
+
+                    <button type="reset" class="btn btn-primary me-5">Clear</button>
+                    <button type="submit" class="btn btn-primary ms-5 mt-1">Submit</button>
+                    <!--  Error will come when we submit the form  -->
+                </form>
+
+            </div>
+            <div class="col-md-6">
+                <div class="feedback_img">
+                    <img class="shop" src="/media/shop.png" width="100%" alt="Error">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container mb-0 pb-0">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <img class="navbar-brand" src="/media/nav.png" alt="" width="50%">
+                    <br><br>
+                    <p>
+                        Welcome to Digital Den, your ultimate destination for the latest and greatest in tech products.
+                        We
+                        are an e-commerce website dedicated to providing high-quality gadgets, electronics, and
+                        accessories
+                        to tech enthusiasts around the world.
+                    </p>
+                </div>
+                <div class="col-md-3 pb-0 mb-0">
+                    <div style="padding-left: 10%;">
+                        <h5>Pages</h5>
+                    </div>
+
+                    
+                    <div style="font-size: medium;">
+                        <ul>
+                            <li><a href="/aboutus.html">
+                                    <div class="black">
+                                        About us
+                                    </div>
+                                </a></li>
+                            <li><a href="">
+                                    <div class="black">
+                                        Services
+                                    </div>
+                                </a></li>
+                            <li><a href="">
+                                    <div class="black">
+                                        Terms of Use
+                                    </div>
+                                </a></li>
+                            <li><a href="">
+                                    <div class="black">
+                                        Blog
+                                    </div>
+                                </a></li>
+                            <li><a href="login.html">
+                                    <div class="black">
+                                        Login
+                                    </div>
+                                </a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="padding-left: 10%;">
+                        <h5>Contact</h5>
+                    </div>
+
+                    <div style="font-size: medium;">
+                        <ul>
+                            <li><a href="mailto:support@digitalden.com" target="_blank">
+                                    <div style="color: black;">
+                                        support@digitalden.ai
+                                    </div>
+                                </a></li>
+                            <li><a href="tell: +919412716643">
+                                    <div style="color: black;">
+                                        Call us
+                                    </div>
+                                </a></li>
+                            <li><a href="https://wa.me/+919412716643" target="_blank">
+                                    <div style="color: black;">
+                                        Whastapp us
+                                    </div>
+
+                                </a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5><b>Find us on</b></h5>
+                <div class="d-flex">
+                    <div style="margin-right: 20px; width: 10px;">
+                        <a href="https://www.facebook.com/aishez123" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                    <div style="margin-right: 20px;;">
+                        <a href="https://instagram.com/aishezsingh" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/aishez-singh-aa955b22b/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center">
+                <p>&copy;2023 all right reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbzy-cGOZY1UgqjEr30CEi5wNouvdM7W6mzGK-L_jnhNQHEiuNG6Xin7X-BGhmhuVTJu-Q/exec'
+        const form = document.forms['Login']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Welcome back !!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Customised JS -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

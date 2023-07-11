@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know more</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- customised CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- cdn for fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Navigation bar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Home.html">
+                <img src="/media/nav.png" width="200px" height="50px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shopnow.html">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            User
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="/Register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container know-more mt-5">
+        <div class="row">
+
+            <div class="col-md-6" style="padding-left: 0; padding-top: 5%">
+                <a href="/p4/images/1.jpg" target="_blank">
+                    <img src="/p4/images/1.jpg" alt="" width="100%" height="80%">
+                </a>
+                <button type="button" onclick="buynow()" class="btn btn-dark" style="margin-left: 35%; margin-top: 7%;">Buy now</button>
+            </div>
+
+            <div class="col-md-6 know-more-2" style="display:block;" id="infopage">
+                <h2>HP Victus Gaming Latest AMD Ryzen 5</h2>
+                <p>AMD Ryzen 5 5600H Processor 16.1 inch(40.9 cm) FHD Gaming Laptop (8GB RAM/512GB SSD/4GB Radeon RX5500M Graphics/B&O/Backlit KB/Win 11/MS Office/Xbox Game Pass),16-E0162ax</h5>
+                    <table class="table table-borderless" style="margin-bottom:20% ;">
+                        <tr>
+                            <td>Brand</td>
+                            <td>HP</td>
+                        </tr>
+                        <tr>
+                            <td>Model Name</td>
+                            <td>16-e0162AX</td>
+                        </tr>
+                        <tr>
+                            <td>Screen Size</td>
+                            <td>16.1 Inches</td>
+                        </tr>
+                        <tr>
+                            <td>Colour</td>
+                            <td>Black</td>
+                        </tr>
+                        <tr>
+                            <td>CPU Model</td>
+                            <td>Ryzen 5</td>
+                        </tr>
+                        <tr>
+                            <td>Operating System</td>
+                            <td>Windows 10 Home</td>
+                        </tr>
+                        <tr>
+                            <td>RAM Memory Installed Size</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Special Feature</td>
+                            <td>Micro-Edge Display</td>
+                        </tr>
+                        <tr>
+                            <td>Graphics Card Description</td>
+                            <td>Dedicated</td>
+                        </tr>
+                        <tr>
+                            <td>Graphics Coprocessor</td>
+                            <td>AMD Radeon RX 5500M</td>
+                        </tr>
+                    </table>
+                    
+                    <button type="button" class="btn btn-primary" onclick="show_info()">Show more</button>
+                    <button type="button" class="btn btn-primary" onclick="show_img()">Show Images</button>
+            </div>
+
+            <div class="col-md-6 know-more-3" style="display: none;" id="buynow">
+                <!-- Form filling  -->
+                <h2>Shipping Address</h2><br>
+                <form name="shipping" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">First Name</label>
+                                <input type="text" name="Fname" class="form-control" id="exampleInputEmail1">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                                <input type="text" name="Lname" class="form-control" id="exampleInputEmail1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                        <input type="number" name="Phone_number" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Street Address</label>
+                                <input type="text" name="Street" class="form-control" id="exampleInputEmail1">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">ZIP/Postal Code</label>
+                                <input type="text" name="postal_code" class="form-control" id="exampleInputEmail1">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Country</label>
+                                <input type="text" name="Country" class="form-control" id="exampleInputEmail1">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">State/Province</label>
+                                <input type="text" name="State" class="form-control" id="exampleInputEmail1">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">City</label>
+                                <input type="text" name="City" class="form-control" id="exampleInputEmail1">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1">Accept term and conditions</label>
+                    </div>
+                    <br>
+                    <button type="button" onclick="previous()" class="btn btn-primary">Previous</button>
+                    <button type="submit" class="btn btn-dark" style="margin-left: 10%;">Place Order</button>
+                    <button type="reset" class="btn btn-primary" style="margin-left: 10%;">Clear form</button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container mt-5 pt-5" style="display: none;" id="show-info">
+        <ul>
+            <li>BUILT FOR PLAY – The Victus by HP 16.1 inch Gaming Laptop PC has what you need to play: a powerful AMD processor and Radeon graphics, an upgraded cooling system, a high-resolution, fast display, and OMEN Gaming Hub.</li>
+            <li>NEXT-GEN GRAPHICS – Experience incredible visuals to elevate all of your gameplay with an AMD Radeon RX 5500M graphics card that’s equipped with 4 GB of GDDR6 dedicated memory and PCI Express 4.0 support for speedier data-transfers.</li>
+            <li>IMMERSIVE DISPLAY – Enjoy vibrant, crystal-clear images with 178-degree wide-viewing angles on this FHD (1920 x 1080) IPS, micro-edge display; plus, this screen’s non-reflective and low-gloss design means you'll get less glare while outside in the sun or under bright lights.</li>
+            <li>UNCOMPROMISING PERFORMANCE – This thin and light laptop lacks nothing in power, packing the speedy 6-core AMD Ryzen 5 5600H mobile processor and up to 4.2 GHz max boost clock.</li>
+            <li>MEMORY AND STORAGE – With 8 GB of RAM, you’ll get a boost to system responsiveness and improved frame rates while gaming. Also, experience shorter load times and faster boot-ups thanks to your laptop computer’s 512 GB of PCIe NVMe M.2 SSD storage.</li>
+            <li>GAME UNINTERRUPTED – Keep playing as your HP laptop’s battery lasts up to 4 hours and can be recharged to 50% in approximately 30 minutes with HP Fast Charge.</li>
+            <li>WINDOWS 11 HOME AND WARRANTY – From a rejuvenated Start menu to new ways to connect, the Windows 11 OS is the place to think, express, and create in a natural way. Protect your purchase with the 1-year limited warranty.</li>
+            <li>EFFORTLESSLY CONNECTED – Enjoy a smooth wireless experience with a Wi-Fi CERTIFIED 6 (2x2) and Bluetooth 5 combo.</li>
+            <li>OUTFITTED FOR MORE – Beyond all the features you need for gaming, this laptop also sports a wide vision HD webcam, dual speakers custom-tuned by B&O, and a backlit keyboard with an integrated numeric pad.</li>
+        </ul>
+    </div>
+
+
+    <div class="container mt-5 pt-5" id="show-img" style="display: none;">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/p4/images/1.jpg" width="100%" alt="">
+            </div>
+            <div class="col-md-6">
+                <img src="/p4/images/2.jpg" width="100%" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/p4/images/3.jpg" width="100%" alt="">
+            </div>
+            <div class="col-md-6">
+                <img src="/p4/images/4.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container mb-0 pb-0">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <img class="navbar-brand" src="/media/nav.png" alt="" width="50%">
+                    <br><br>
+                    <p>
+                        Welcome to Digital Den, your ultimate destination for the latest and greatest in tech products.
+                        We
+                        are an e-commerce website dedicated to providing high-quality gadgets, electronics, and
+                        accessories
+                        to tech enthusiasts around the world.
+                    </p>
+                </div>
+                <div class="col-md-3 pb-0 mb-0">
+                    <div style="padding-left: 10%;">
+                        <h5>Pages</h5>
+                    </div>
+
+                    <div style="font-size: medium;">
+                        <ul>
+                            <li><a href="/aboutus.html">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="/terms.html">Terms of Use</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="/login.html">Login</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="padding-left: 10%;">
+                        <h5>Contact</h5>
+                    </div>
+
+                    <div style="font-size: medium;">
+                        <ul>
+                            <li><a href="mailto:support@digitalden.com" target="_blank">support@digitalden.ai</a></li>
+                            <li><a href="tell: +919412716643">Call us</a></li>
+                            <li><a href="https://wa.me/+919412716643" target="_blank">Whastapp us</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5><b>Find us on</b></h5>
+                <div class="d-flex">
+                    <div style="margin-right: 20px; width: 10px;">
+                        <a href="https://www.facebook.com/aishez123" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                    <div style="margin-right: 20px;;">
+                        <a href="https://instagram.com/aishezsingh" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/aishez-singh-aa955b22b/" target="_blank"> 
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center">
+                <p>&copy;2023 all right reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbx8GHAul-fpxsWeJH1_kHe3aM4Q99JSOred2UZwqC2WjdCA8FyuR-IQEgVIKPGzhg8Jjg/exec'
+        const form = document.forms['shipping']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Order placed !!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Customised JS -->
+    <script src="/main.js"></script>
+
+</body>
+
+</html>

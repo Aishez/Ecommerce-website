@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- customised CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- cdn for fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body style="background-image: linear-gradient(90deg ,white,skyblue);">
+
+    <!-- Navigation bar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="media/nav.png" width="200px" height="50px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopnow.html">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            User
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="Register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container home1">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="front-text">
+                    <h2>Trade in offer</h2>
+                    <h1>Super Value Deals</h1>
+                    <h1>On all Products</h1>
+                    <p>Up to ₹2,000 UPI instant discounts | No Cost EMI | 14 days returns & replacement*.</p>
+                    <a href="shopnow.html">
+                        <button type="button" class="btn btn-primary glow-on-hover"><b>SHOP NOW !</b></button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="shop" src="media/shop.png" alt="error">
+                <p style="text-align: center;">Indulge in retail therapy with our trendy and affordable collections!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Deals of the day -->
+
+
+    <h1 style="text-align: center; margin-top: 10%;"> Deals of The Day</h1>
+
+    <div class="container mt-5 pt-5 phone">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="img">
+                        <img src="media/laptop1/laptop1.jpg" class="card-img-top" alt="error">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Apple 2020 MacBook Air Laptop M1 chip</h5>
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> 84,999</h5>
+                        <p class="card-text">Apple 2020 MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display,
+                            8GB RAM, 256GB SSD Storage, Backlit Keyboard,FaceTime HD Camera, Space Grey</p>
+                        <center class="know-more">
+                            <a href="know-more.html" class="btn btn-primary">Know more</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="img">
+                        <img src="media/TV/1.webp" class="card-img-top" width="10px" height="auto" alt="error" style="transform: scale(0.9);">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">OnePlus 80 cm (32 inches) Y Series</h5>
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> 11,999</h5>
+                        <p class="card-text">OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1
+                            (Black)</p>
+                        <br><br>
+                        <center>
+                            <a href="P2/know-more.html" class="btn btn-primary">Know more</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="img">
+                        <img src="p3/images/1.jpg" class="card-img-top" alt="error" style="transform: scale(0.9);">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">BoAt Newly Launched Wave Leap</h5>
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> 84,999</h5>
+                        <p class="card-text">boAt Newly Launched Wave Leap Call with 1.83" HD Display, Advanced
+                            Bluetooth Calling, Multiple Watch Faces, Multi-Sports Modes, IP68, HR & SpO2</p>
+                        <center>
+                            <a href="/p3/know-more.html" class="btn btn-primary">Know more</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--
+    For more deals
+
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="img">
+                        <img src="media/laptop1/laptop1.jpg" class="card-img-top" alt="error">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Apple 2020 MacBook Air Laptop M1 chip</h5>
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> 84,999</h5>
+                        <p class="card-text">Apple 2020 MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display,
+                            8GB RAM, 256GB SSD Storage, Backlit Keyboard,FaceTime HD Camera, Space Grey</p>
+                        <center class="know-more">
+                            <a href="#" class="btn btn-primary">Know more</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="img">
+                        <img src="media/laptop1/laptop1.jpg" class="card-img-top" alt="error">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Apple 2020 MacBook Air Laptop M1 chip</h5>
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> 84,999</h5>
+                        <p class="card-text">Apple 2020 MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display,
+                            8GB RAM, 256GB SSD Storage, Backlit Keyboard,FaceTime HD Camera, Space Grey</p>
+                        <center>
+                            <a href="#" class="btn btn-primary">Know more</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="img">
+                        <img src="media/laptop1/laptop1.jpg" class="card-img-top" alt="error">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Apple 2020 MacBook Air Laptop M1 chip</h5>
+                        <h5><i class="fa-solid fa-indian-rupee-sign"></i> 84,999</h5>
+                        <p class="card-text">Apple 2020 MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display,
+                            8GB RAM, 256GB SSD Storage, Backlit Keyboard,FaceTime HD Camera, Space Grey</p>
+                        <center>
+                            <a href="#" class="btn btn-primary">Know more</a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+-->
+
+
+    <footer class="footer">
+        <div class="container mb-0 pb-0">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <img class="navbar-brand" src="/media/nav.png" alt="" width="50%">
+                    <br><br>
+                    <p>
+                        Welcome to Digital Den, your ultimate destination for the latest and greatest in tech products.
+                        We
+                        are an e-commerce website dedicated to providing high-quality gadgets, electronics, and
+                        accessories
+                        to tech enthusiasts around the world.
+                    </p>
+                </div>
+                <div class="col-md-3 pb-0 mb-0">
+                    <div style="padding-left: 10%;">
+                        <h5>Pages</h5>
+                    </div>
+
+                    <div style="font-size: medium;">
+                        <ul>
+                            <li><a href="/aboutus.html">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="/terms.html">Terms of Use</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="/login.html">Login</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="padding-left: 10%;">
+                        <h5>Contact</h5>
+                    </div>
+
+                    <div style="font-size: medium;">
+                        <ul>
+                            <li><a href="mailto:support@digitalden.com" target="_blank">support@digitalden.ai</a></li>
+                            <li><a href="tell: +919412716643">Call us</a></li>
+                            <li><a href="https://wa.me/+919412716643" target="_blank">Whastapp us</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5><b>Find us on</b></h5>
+                <div class="d-flex">
+                    <div style="margin-right: 20px; width: 10px;">
+                        <a href="https://www.facebook.com/aishez123" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+
+                    <div style="margin-right: 20px;;">
+                        <a href="https://instagram.com/aishezsingh" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/aishez-singh-aa955b22b/" target="_blank"> 
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center">
+                <p>&copy;2023 all right reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Customised JS -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
